@@ -2,6 +2,7 @@
 # -*- encoding: utf-8 -*-
  
 import imaplib
+# В файле keys_in_mail указать логин и пароль(пароль на маил ру с правами доступа приложения)
 from keys_in_mail import login, password
 import email
 
