@@ -13,13 +13,15 @@ from keys_in_mail import login, password
 server = 'smtp.mail.ru'
 user = login
 passw = password
- 
+
+# Указываю на какие почтовые ресурсы отправить письмо
 recipients = ['example2@mail.ru', 'example3@mail.ru']
 sender = 'b_438@mail.ru'
 subject = 'Тема сообщения'
 text = 'Текст сообщения'
 html = '<html><head></head><body><p>'+text+'</p></body></html>'
- 
+
+# Указываю путь в котором лежит файл, который я буду отправлять по почте 
 filepath = "/var/log/maillog"
 basename = os.path.basename(filepath)
 filesize = os.path.getsize(filepath)
